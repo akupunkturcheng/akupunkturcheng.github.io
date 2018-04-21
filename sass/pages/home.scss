@@ -1,0 +1,46 @@
+.pristilbud {
+    width: 60%;
+    margin: 0 auto;
+
+    &__paragraph {
+        font-size: 1.8rem;
+        line-height: 1.8;
+        margin-top: -2.4rem;
+        color: #868484;
+    }
+}
+.section-omakupunktur {
+    background-color: rgba($color: #B9D5D4, $alpha: 0.4)
+}
+
+.omakupunktur {
+    height: 40rem;
+}
+
+.omtale {
+    margin-top: -3rem;
+
+    &__shape {
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 5rem;
+    }
+
+    &__img {
+        width: 15rem;
+        float: left;
+        padding-right: 3rem;
+    }
+
+    &__caption {
+        font-size: 1.6rem;
+        line-height: 1.7;
+        color: #868484;
+    }
+}
+
+#map {
+    width: 100%;
+    height: 30rem;
+    background-color: grey;
+}

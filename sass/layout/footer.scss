@@ -1,0 +1,22 @@
+.footer {
+    width: 100%;
+    height: 20rem;
+
+    &__logo {
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 30%;
+
+        &--img {
+            float: left;
+            margin-right: 2rem;
+        }
+
+        &--txt {
+            padding-top: 5rem;
+            font-family: 'Julius Sans One', sans-serif;
+            font-size: 2.2rem;
+            color: #656565;
+        }
+    }
+}

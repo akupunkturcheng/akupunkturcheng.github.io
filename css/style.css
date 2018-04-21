@@ -1,0 +1,245 @@
+/*
+0 - 600px:       Phone
+600 - 900px:     Tablet portrait
+900-1200px:      Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+.heading--primary {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #868484; }
+
+.paragraph {
+  font-size: 1.8rem;
+  color: #868484;
+  line-height: 1.57; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 6rem !important; }
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
+.u-margin-top-big {
+  margin-top: 6rem !important; }
+
+.u-line-green {
+  border-bottom: 1px solid #60B8B5;
+  margin-left: 15rem;
+  margin-right: 15rem; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-semi-bold {
+  font-weight: 400; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2rem 6rem;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  font-size: 2.8rem;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleY(1.4) scaleX(1.7);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn--green-light {
+  background-color: #B9D5D4;
+  color: #fff; }
+  .btn--green-light::after {
+    background-color: #fff; }
+
+.footer {
+  width: 100%;
+  height: 20rem; }
+  .footer__logo {
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 30%; }
+    .footer__logo--img {
+      float: left;
+      margin-right: 2rem; }
+    .footer__logo--txt {
+      padding-top: 5rem;
+      font-family: 'Julius Sans One', sans-serif;
+      font-size: 2.2rem;
+      color: #656565; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 6rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.header {
+  margin-top: -6rem;
+  height: 55vh;
+  background-image: url(../img/header-img2.png);
+  background-size: cover; }
+  .header__treatments {
+    display: block;
+    padding: 3.5rem;
+    padding-left: 7rem;
+    margin-left: 6rem;
+    height: 65vh;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.8); }
+  .header__list {
+    list-style-type: none; }
+  .header__item:not(:first-child) {
+    padding-top: 2rem; }
+  .header__paragraph {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none; }
+  .header__btn-box {
+    position: relative;
+    top: 15rem;
+    left: 14rem; }
+
+.logo {
+  margin-top: 1.5rem; }
+  .logo--txt {
+    display: inline-block;
+    margin-left: -4rem;
+    margin-top: 8rem;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2.2rem;
+    color: #656565; }
+
+.navigation__list {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 8.3rem; }
+
+.navigation__item {
+  display: inline-block;
+  padding-right: 3.5rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5rem; }
+
+.pristilbud {
+  width: 60%;
+  margin: 0 auto; }
+  .pristilbud__paragraph {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-top: -2.4rem;
+    color: #868484; }
+
+.section-omakupunktur {
+  background-color: rgba(185, 213, 212, 0.4); }
+
+.omakupunktur {
+  height: 40rem; }
+
+.omtale {
+  margin-top: -3rem; }
+  .omtale__shape {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 5rem; }
+  .omtale__img {
+    width: 15rem;
+    float: left;
+    padding-right: 3rem; }
+  .omtale__caption {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #868484; }
+
+#map {
+  width: 100%;
+  height: 30rem;
+  background-color: grey; }
