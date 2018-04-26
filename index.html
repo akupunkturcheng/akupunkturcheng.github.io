@@ -7,94 +7,57 @@
         <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans:300,400,600,600i,700,700i" rel="stylesheet">
 
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>Akupunktur Cheng</title>
     </head>
     <body>
-        <div class="row">
-            <div class="col-1-of-2">
-                <div class="row">
-                    <div class="col-1-of-5">    
-                        <img class="logo logo--img" src="img/acupunture-logo.png"></img> 
-                    </div>
-                    <div class="col-4-of-5">  
-                        <h1 class="logo logo--txt">Akupunktur Cheng</h1>
-                    </div>
-                       
-                </div>
-            </div>
-            <div class="col-1-of-2">
-                <nav class="naviagtion">
-                    <ul class="navigation__list">
-                        <li class="navigation__item">
-                            <a href="#" class="navigation__link">Behandlinger</a>
-                        </li>
-                        <li class="navigation__item">
-                                <a href="#" class="navigation__link">Kundeomtaler</a>
-                            </li>
-                        <li class="navigation__item">
-                            <a href="#" class="navigation__link">Priser</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a href="#" class="navigation__link">Om Meg</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a href="#" class="navigation__link">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
-             </div>
-        </div>
 
-        <header class="header">
+        <nav class="navigation">
             <div class="row">
-                <div class="col-1-of-2">
-                    <div class="header__btn-box">
-                        <a class="btn btn--green-light" href="#">Bestill Time</a>      
-                    </div>      
-                </div>
-                <div class="col-1-of-2">
-                    <div class="header__treatments">
-                       <ul class="header__list">
-                           <li class="header__item">
-                               <p class="header__paragraph"><span class="u-semi-bold">Få hjelp med:</span></p>
-                            </li>
-                           <li class="header__item">
-                               <p class="header__paragraph">Muskelplager og smerter</p>
-                            </li>
-                           <li class="header__item">
-                               <p class="header__paragraph">Ordinær insomnia</p>
-                            </li>
-                           <li class="header__item">
-                               <p class="header__paragraph">Vekttap</p>
-                            </li>
-                           <li class="header__item">
-                               <p class="header__paragraph">Migrene og hodepine</p>
-                            </li>
-                           <li class="header__item">
-                               <p class="header__paragraph">Røyke- og snusslutt</p>
-                            </li>
-                            <li class="header__item">
-                                <p class="header__paragraph">Fordøyelsesproblemer</p>
-                            </li>
-                       </ul>
-                    </div>
-                </div>
+                <img class="navigation__logo navigation__logo--img" src="img/acupunture-logo.png"></img>      
+                <h1 class="navigation__logo navigation__logo--txt">Akupunktur Cheng</h1>
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#behandlinger" class="navigation__link">Behandlinger</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#priser" class="navigation__link">Priser</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#kundeomtaler" class="navigation__link">Kundeomtaler</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#omcheng" class="navigation__link">Om Cheng</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#kontakt" class="navigation__link">Kontakt</a>
+                    </li>
+                </ul>
+                <a class="navigation__mobile-nav-icon"><i class="ion-navicon-round"></i></a>
+            </div>
+        </nav>
+
+        <header class="header js--header">
+            <div class="row">
+                <div class="header__btn-box">
+                    <a class="btn btn--green-light" href="#">Bestill Time</a>      
+                </div>      
             </div>
         </header>
+
         <section class="section-pristilbud">
             <div class="row">
-                <h2 class="heading heading--primary u-center-text">Pristilbud for nye pasienter</h2>
+                <h2 class="heading heading--primary u-center-text u-margin-top-big">Pristilbud for nye pasienter</h2>
             </div>
             <div class="row">
                 <div class="pristilbud">
-                    <p class="pristilbud__paragraph u-center-text u-margin-bottom-big">
+                    <p class="paragraph u-center-text u-margin-bottom-big">
                         Fra 19. April 2018 får alle nye pasienter x timer til kun xxxkr! Ordinær pris er xxxkr. Skriv i kommentarfeltet at du er ny pasient når du bestiller.
                     </p>
                 </div>
             </div>
         </section>
+
         <section class="section-omakupunktur">
             <div class="row">
                 <div class="col-1-of-2">
@@ -102,11 +65,89 @@
                 </div>
                 <div class="col-1-of-2">
                     <h2 class="heading heading--primary u-center-text u-margin-top-medium">Akupunktur og kinesisk medisin</h2> 
-                    <p class="paragraph u-margin-top-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus massa, auctor vel eros non, pellentesque lobortis lectus. Nam id sollicitudin sapien. Donec faucibus vulputate libero. Proin mattis, magna sed consectetur semper, mi massa porttitor neque, sit amet dictum nulla felis vel elit. Sed sed dui mattis, bibendum dui et, elementum magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas suscipit blandit diam quis consectetur.</p> 
+                    <p class="paragraph u-margin-top-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus massa, auctor vel eros non, pellentesque lobortis lectus. Nam id sollicitudin sapien. Donec faucibus vulputate libero. Proin mattis, magna sed consectetur semper, mi massa porttitor neque, sit amet dictum nulla felis vel elit. Sed sed dui mattis, bibendum dui et, elementum magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas suscipit blandit diam quis consectetur.</p> 
                 </div>
             </div>
         </section>
-        <section class="section-kundeomtaler">
+
+        <section class="section-behandlinger" id="behandlinger">
+            <div class="row">
+                <h2 class="heading heading--primary u-center-text u-margin-top-big">Behandlinger</h2>
+            </div>
+            <div class="row">
+                <div class="behandlinger-intro">
+                <p class="u-center-text">Nedenfor finner du noen av de plagene som akupunkturbehandling kan hjelpe deg med</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="behandlinger">
+                    <h3 class="heading--secondary">Kardiovaskulære sykdommer</h3>
+                    <h3>Cerebral arteriosklerose</h3>
+                    <p class="paragraph">Reduser søvnighet, fremmer hjerneaktivitet</p>
+                    <h3>Arteriosklerose og hypertensjon</h3>
+                    <p class="paragraph">Akupunktur kan brukes som adjuvansbehandling, reduserer symptomene på svimmelhet, søvnløshet, hodepine. Kardiovaskulære sykdommer Angina, hjerteinsuffisiens, arytmi er ikke i behandlingsområdet</p>
+                    <h3>Hjerteurose</h3>
+                    <p class="paragraph">Reduce the symptoms: Palpitations, chest tightness.</p>
+                    <h3>fordøyelsesproblemer</h3>
+                    <p class="paragraph">Kronisk magesmerter, pantothensyre, magesmerter, diaré, forstoppelse
+                    </p>
+                    <div class="u-line-green u-margin-top-big"></div>
+                    <h3 class="heading--secondary">Bevegelsessystem
+                    </h3>
+                    <h3>Lindre stress og tretthet</h3>
+                    <h3>Muskelbelastning</h3>
+                    <p class="paragraph">Nakke og ryggsmerter, rygg i ryggen, arm og ben smerte</p>
+                    <h3>Gikt</h3>
+                    <p class="paragraph">Kronisk leddgikt, revmatisme og reumatoid, reduserer smerten</p>
+                    <h3>Restless legs</h3>
+                    <p class="paragraph">Forbedre søvn</p>
+                    <h3>Lumbal plate herniation</h3>
+                    <p class="paragraph">Reduser midje og ben smerte</p>
+                    <div class="u-line-green u-margin-top-big"></div>
+                    <h3 class="heading--secondary">Nervesystemet
+                    </h3>
+                    <h3>Ordinær insomnia/søvnløshet</h3>
+                    <p class="paragraph">Forbedre søvn</p>
+                    <h3>Parkinsons</h3>
+                    <p class="paragraph">Forbedre fysisk bevegelse, forbedre balansen</p>
+                    <h3>Slag (rekonvalens)</h3>
+                    <p class="paragraph">Forbedre søvn, forbedre humøret, forbedre fysisk bevegelse, forbedre balansen</p>
+                    <div class="u-line-green u-margin-top-big"></div>
+                    <h3 class="heading--secondary">Luftveiene</h3>
+                    <h3>Astma</h3>
+                    <p class="paragraph">Reduser hyppigheten av astma, reduser symptompåvirkningen: hoste, hvesenhet, redusere luftveisbetennelse, redusere allergisymptomer</p>
+                    <h3>Forkjølelse</h3>
+                    <p class="paragraph">Spesielt lang tid hoste etter forkjølelse; løpende nese, ondt i halsen</p>
+                    <h3>Allergisk rhinitt</h3>
+                    <p class="paragraph">Reduser symptomene: nyser, løpende nese, redusere luftveisbetennelse, redusere allergi symptomer</p>
+                    <h3>Kronisk bronkitt</h3>
+                    <p class="paragraph">Reduser forekomstfrekvensen, reduser symptomene: hoste, hvesenhet, redusere luftveisbetennelse, redusere allergi symptomer</p>
+                    <div class="u-line-green u-margin-top-big"></div>
+                    <h3 class="heading--secondary">Vekttap og skjønnhet </h3>
+                    <h3>Menopausal syndrom</h3>
+                    <p class="paragraph">Reduser symptomene: Overvekt, søvnløshet, ødem, akne, hetetokter, irritasjon</p>
+                    <h3>Overvekt</h3>
+                    <p class="paragraph">Forårsaget av endokrine lidelser: miste 5-10kg noen måned</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-priser u-margin-top-big" id="priser">
+            <div class="row">
+                    <h2 class="heading heading--primary u-center-text u-margin-top-big">Priser</h2>
+            </div>
+            <div class="row">
+                <div class="priser">
+                    <p>Nye pasienter: xxxkr per time (maks 3 timer)</p>
+                    <p>Pakke på 5 timer: totalt xxxxkr (xxx per time)</p>
+                    <p>Pakke på 10 timer: totalt xxxxkr (xxx per time)</p>
+                    <p>Enkeltime: xxxkr</p>
+                    <p>Partime: xxxkr per person</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-kundeomtaler" id="kundeomtaler">
             <div class="row">
                 <h2 class="heading heading--primary u-center-text u-margin-top-big">Fornøyde pasienter</h2>
             </div>
@@ -127,6 +168,57 @@
                 </div>       
             </div>
         </section>
+
+        <section class="section-omcheng" id="omcheng">
+            <div class="row">
+                <div class="col-1-of-2">
+                    <img src="img/cheng.jpg" alt="Cheng">
+                </div>
+                <div class="col-1-of-2">
+                    <h2 class="heading--primary u-center-text u-margin-top-medium">Om Cheng</h2>
+                    <p class="paragraph u-margin-top-small">Senior spesialist i kinesisk medisin
+                    Master og Bachelor i klinisk medisin fra Beijing University of Chinese Medicine.
+                            
+                    11 år som registrert klinisk praktiserende lege og akupunktør i det tilknyttede sykehuset i Beijing University of Chinese Medicine og 2 år som akupunktør og TCM-lege ved Bad Kötzting TCM Clinic i Tyskland.
+                            
+                    Verdensforbundet for kinesiske medisinske samfunn har godkjent Dr. Cheng Wang å organisere TCM-utøvere i Norge for å delta i International Chinese Medicine Professional Title Examination.</p>    
+                </div>
+            </div>
+        </section>
+
+        <section class="section-kontakt" id="kontakt">
+            <div class="row">
+                <h2 class="heading--primary u-center-text u-margin-top-medium">Kontakt</h2>
+            </div>
+            <div class="row">
+                <p class="paragraph">Forårsaget av endokrine lidelser: miste 5-10kg noen måned</p>
+            </div>
+            <div class="row">
+                <div class="kontakt-form">
+                        <form action="email.php" method="post" class="form" id="kontakt">
+                                <div class="form__group">
+                                   <input type="text" class="form__input" placeholder="Navn" id="name" required>
+                                   <label for="name" class="form__label">Navn</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="email" class="form__input" placeholder="Epost" id="email" required>
+                                    <label for="email" class="form__label">Epost</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="text" class="form__input" placeholder="Telefon" id="email" required>
+                                    <label for="telefon" class="form__label">Telefon</label>
+                                </div>
+                                <div class="form__group">
+                                    <textarea name="kommentar" class="form__textarea" id="kontakt"></textarea>
+                                </div>
+                                <div class="form__group">
+                                    <button class="btn btn--small">Send &rarr;</button>
+                                </div>
+                           </form>
+                </div>
+            </div>
+        </section>
+
         <section class="section-map">
             <div id="map" class="u-margin-top-big"></div>
                 <script>
@@ -146,6 +238,7 @@
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVYPkV7dfOnCZfX99IajNsYCdSpbqn0hY&callback=initMap">
                 </script>
         </section>
+
         <footer class="footer">
             <div class="row">  
                 <div class="footer__logo">
@@ -162,6 +255,10 @@
             </div>
         </footer>
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script src="js/script.js"></script>
         
         
         <!--
