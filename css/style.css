@@ -38,6 +38,9 @@ html {
 body {
   box-sizing: border-box; }
 
+section:focus {
+  outline: none; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; }
@@ -90,11 +93,15 @@ h3 {
 
 .u-line-green {
   border-bottom: 1px solid #60B8B5;
-  margin-left: 15rem;
+  margin-left: 0rem;
   margin-right: 15rem; }
 
 .u-center-text {
   text-align: center !important; }
+
+.u-center-div {
+  margin: 0 auto;
+  width: 100%; }
 
 .u-semi-bold {
   font-weight: 400; }
@@ -149,9 +156,6 @@ h3 {
   width: 100%;
   display: block;
   transition: all .3s; }
-  @media (max-width: 56.25em) {
-    .form__input {
-      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -181,23 +185,26 @@ h3 {
   font-size: 1.5rem;
   font-family: inherit;
   background-color: rgba(209, 209, 209, 0.2);
-  border: none; }
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all .3s; }
+  .form__textarea:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #60B8B5; }
+  .form__textarea::-webkit-input-textarea {
+    color: #60B8B5; }
 
 .footer {
+  padding: 4rem;
   width: 100%;
-  height: 20rem; }
-  .footer__logo {
-    margin: 0 auto;
-    margin-top: 2rem;
-    width: 30%; }
-    .footer__logo--img {
-      float: left;
-      margin-right: 2rem; }
-    .footer__logo--txt {
-      padding-top: 5rem;
-      font-family: 'Julius Sans One', sans-serif;
-      font-size: 2.2rem;
-      color: #656565; }
+  height: 20rem;
+  text-align: center; }
+  .footer__txt, .footer__link {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color: #868484; }
 
 .row {
   max-width: 114rem;
@@ -242,20 +249,28 @@ h3 {
 .header {
   margin-top: 0rem;
   height: 55vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/header-img2.png);
-  background-size: cover; }
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/header.png);
+  background-size: cover;
+  background-position: bottom; }
   .header__btn-box {
     padding-top: 15rem;
     padding-left: 40rem; }
+  @media (max-width: 56.25em) {
+    .header {
+      height: 30vh; }
+      .header__btn-box {
+        padding-left: 6rem;
+        padding-top: 8rem; } }
 
 .navigation__logo {
   margin-top: 1.5rem; }
   .navigation__logo--img {
-    float: left; }
+    float: left;
+    height: 10rem; }
   .navigation__logo--txt {
     display: inline-block;
     margin-left: 1.5rem;
-    margin-top: 8rem;
+    margin-top: 6rem;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 2.2rem;
     color: #656565; }
@@ -263,7 +278,7 @@ h3 {
 .navigation__list {
   list-style-type: none;
   display: inline-block;
-  margin-top: 0;
+  margin-top: 6rem;
   padding-bottom: 5rem;
   float: right; }
 
@@ -306,6 +321,7 @@ h3 {
       font-size: 1.6rem;
       color: #656565; }
   .sticky .navigation__list {
+    padding-top: 3rem;
     list-style-type: none;
     display: inline-block;
     margin-top: -2rem;
@@ -326,31 +342,47 @@ h3 {
   .sticky .navigation__link:hover, .sticky .navigation__link:active {
     border-bottom: 2px solid #60B8B5; }
 
-.pristilbud {
+.section-velkommen {
   width: 60%;
   margin: 0 auto; }
   @media (max-width: 56.25em) {
-    .pristilbud {
+    .section-velkommen {
       width: 90%; } }
 
 .section-omakupunktur {
   background-color: rgba(185, 213, 212, 0.4); }
+  .section-omakupunktur p {
+    padding-bottom: 5rem; }
+  @media (max-width: 56.25em) {
+    .section-omakupunktur h2 {
+      margin-top: -2rem !important; } }
 
 .omakupunktur {
-  height: 40rem; }
+  height: 40rem;
+  margin-left: 25%; }
   @media (max-width: 56.25em) {
     .omakupunktur {
-      height: 30rem; } }
+      width: 100%;
+      height: 100%;
+      padding-top: 3rem;
+      margin-left: 0; } }
 
 .behandlinger-intro {
   font-size: 1.8rem;
   line-height: 1.8;
   color: #868484; }
 
+.viktig-info {
+  margin: 0 auto;
+  width: 65%; }
+  .viktig-info ol {
+    padding-bottom: 2rem; }
+  .viktig-info li {
+    padding-bottom: 1rem; }
+
 .behandlinger {
   margin: 0 auto;
-  width: 60%;
-  text-align: center; }
+  width: 65%; }
   @media (max-width: 56.25em) {
     .behandlinger {
       width: 90%; } }
@@ -390,13 +422,18 @@ h3 {
 .section-omcheng {
   background-color: rgba(185, 213, 212, 0.4); }
   .section-omcheng img {
-    padding-left: 10rem;
-    height: 40rem; }
+    margin-left: 10rem;
+    height: 45rem; }
   .section-omcheng p {
     padding-bottom: 5rem; }
   @media (max-width: 56.25em) {
     .section-omcheng img {
-      padding-left: 1rem; } }
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 3rem; }
+    .section-omcheng h2 {
+      margin-top: -2rem !important; } }
 
 .section-kontakt p {
   text-align: center; }
@@ -404,6 +441,9 @@ h3 {
 .kontakt-form {
   width: 60%;
   margin: 0 auto; }
+  @media (max-width: 56.25em) {
+    .kontakt-form {
+      width: 100%; } }
 
 #map {
   width: 100%;

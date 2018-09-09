@@ -10,7 +10,7 @@ $(document).ready(function() {
             $('nav').removeClass('sticky');
         }
     }, {
-        offset: '6rem;'
+        offset: '120rem;'
     });
 
 
